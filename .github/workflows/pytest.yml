@@ -2,9 +2,9 @@ name: Pytest
 
 on:
   push:
-    branches: ["main"]
+    branches: ["**"]
   pull_request:
-    branches: ["main"]
+    branches: ["**"]
   workflow_dispatch:
 
 jobs:
@@ -28,4 +28,3 @@ jobs:
       - name: Run all unit tests
         run: |
           python -m pytest -m unit
-      
