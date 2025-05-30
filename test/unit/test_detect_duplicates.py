@@ -1,4 +1,6 @@
-import pytest  
+import pytest
+pytestmark = pytest.mark.unit
+
 from unittest.mock import patch  
 from src.util.detector import detect_duplicates  
 from src.util.parser import Article  
